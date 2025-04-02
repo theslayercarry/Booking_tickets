@@ -217,7 +217,7 @@ namespace Booking_tickets
         private void Add_Service_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Вызываем завершение приложения
-            Application.Exit();
+            Environment.Exit(0);
         }
 
         private decimal LoadAndApplyDiscount(decimal TicketPrice, decimal TotalSpent)
